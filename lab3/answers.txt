@@ -1,0 +1,14 @@
+sort1 uses: Bubble Sort
+
+How do you know?: For sorting to be classified as BUBBLE SORT the lower bound on running steps should be smallest compared to the merge and selection sort.
+and less steps means less time to sort the list. So I have run each sorting algorithm with the same text file (sorted5000.txt, to check the lower bound on running rtime, since it is already sorted) and checked which one algorithm took the least time.
+
+sort2 uses: Merge Sort
+
+How do you know?: For sorting to be classified as MERGE SORT the upper bound on running steps should be smallest compared to the merge and selection sort.
+So I have run each sorting algorithm with the same text file (reversed5000.txt, to check for the worst case scenario, when everything is sorted in the reversed order) and checked which one took the least time.
+
+
+
+sort3 uses: Selection Sort
+How do you know?: After identifying bubble and merge sort, the one we left with should be the SELECTION SORT. To check this I considered the least case scenario of already sorted list(sorted5000.txt) and I ran all three algorithms with this text file. since lower bound on running time or number of steps for selection sort is Ω(n^2), which is largest compared to others two sorting algorithms.
