@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    INDEX
+{% endblock %}
+
+
+{% block main %}
+
+<table class="table table-striped">
+  <thead>
+    <th><b>Symbol</b></th>
+    <th><b>Name</b></th>
+    <th><b>Shares</b></th>
+    <th><b>Price</b></th>
+    <th><b>Total</b></th>
+  </thead>
+  <tbody>
+    {% for record in records %}
+    <tr>
+      <td>{{ record["symbol"] }}</td>
+      <td>{{ record["name"] }}</td>
+      <td>{{ record["SUM(shares)"] }}</td>
+      <td>{{ record["price"] | usd }}</td>
+      <td>{{ (record["price"]*record["SUM(shares)"]) | usd }}</td>
+    </tr>
+    {% endfor %}
+    <tr>
+      <td>CASH</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>{{ cash | usd }}</td>
+    </tr>
+  <tfoot>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><b>{{ grand_total | usd }}</b></td>
+  </tfoot>
+  </tbody>
+</table>
+{% endblock %}
