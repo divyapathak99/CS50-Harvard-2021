@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+        <title>leviosa</title>
+        <script>
+            // Load DOM to run script.
+            document.addEventListener("DOMContentLoaded", function(){
+                //For multiple choice: change the answer color to green and add feedback Correct! foor the correct answer.
+                let correct_answer = document.querySelectorAll(".correct");
+                for (let j = 0; j < correct_answer.length; j++) {
+                   correct_answer[j].addEventListener("click", function() {
+                       correct_answer[j].style.backgroundColor = "green";
+
+                   });
+
+                }
+               //change the answer color to  and add feedback Correct! for the incorrect answer.
+               let incorrect_answer = document.querySelectorAll(".incorrect");
+               for (let i = 0; i < incorrect_answer.length; i++) {
+                   incorrect_answer[i].addEventListener("click", function() {
+                       incorrect_answer[i].style.backgroundColor = "red";
+
+                   });
+
+               }
+                let input = document.querySelector('input');
+                input.addEventListener('keyup', function(event) {
+                    let name = document.querySelector('#name');
+                    name.innerHTML= `hello, ${input.value}!`;
+                });
+            });
+        </script>
+    </head>
+    <body id="anime_bg">
+        <h1 class="style_font simple-shadow" style="color: red" id="centered">&#127836 Hey! Hey ! Hey!</h1>
+        <h5 style="color: SlateBlue" id="centered" class="simple-shadow">It is foolish to fear what we have yet to see and know.<sub style="color: white; font-size: small" > ~ Itachi uchiha</sub></h5>
+
+        <div style="font-family: cursive">
+           <marquee behavior="scroll" direction="left" style="color: green" class="simple-shadow">Welcome to Hey! Hey! Hey!, it may sound weird to name a page like this but literally its the first thing that came to my mind, if you know you know. &#128521</marquee>
+            <hr>
+            <ol style="color: red">
+            <li><h5 style="color: pink">If you'll have to give one name inspired by any anime to yourself what would it be? like my anime name is yauchiha.</h5></li>
+                <input autocomplete="off" autofocus placeholder="Anime name" type="text">
+                <p id="name" style="color: red"></p>
+
+
+            <li><h3 style="color: orange">In "Hunter x Hunter", what are members in killua's family known for being?</h3></li>
+            <button class="incorrect">Ninja</button>
+            <button class="incorrect">Alians</button>
+            <button class="correct">Assassins</button>
+            <button class="incorrect">Ghoul</button>
+
+            <li><h3 style="color: orange">Who are itachi and kisame looking for when they first srrive in konoha together?</h3></li>
+            <button class="incorrect">Sakura</button>
+            <button class="incorrect">Sasuke</button>
+            <button class="incorrect">Kakashi</button>
+            <button class="correct">Naruto</button>
+
+            <li><h3 style="color: orange">"Sorry, I got lost in the path of life" whoes excuse is this?</h3></li>
+            <button class="incorrect">Naruto</button>
+            <button class="incorrect">Jiraya</button>
+            <button class="correct">Kakashi</button>
+            <button class="incorrect">Itachi</button></ol>
+        </div>
+        <div id="left_corner">
+            <nav class="w3-bar w3-black">
+                <p style="color: pink" class=simple-shadow>&nbsp;&nbsp;&nbsp; Also have a look &#8608
+                <a href="index.html" class="w3-button w3-bar-item" style="color: green"><strong>Home</strong</a>
+                <a href="potter.html" class="w3-button w3-bar-item" style="color: white"><b>Alohmora</b></a>
+                <a href="greetings.html" class="w3-button w3-bar-item" style="color: green"><b>Greeting</b></a></p>
+            </nav>
+        <div>
+            <img src="https://animemotivation.com/wp-content/uploads/2019/07/yui-hirasawa-arigato.gif" alt="Arigato" width="30%">
+    </body>
+    </html>

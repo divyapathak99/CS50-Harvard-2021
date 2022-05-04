@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+        <title>leviosa</title>
+        <script>
+            // Load DOM to run script.
+            document.addEventListener("DOMContentLoaded", function(){
+                //For multiple choice: change the answer color to green and add feedback Correct! foor the correct answer.
+                let correct_answer = document.querySelectorAll(".correct");
+                for (let j = 0; j < correct_answer.length; j++) {
+                   correct_answer[j].addEventListener("click", function() {
+                       correct_answer[j].style.backgroundColor = "green";
+
+                   });
+                }
+               //change the answer color to  and add feedback Correct! foor the incorrect answer.
+               let incorrect_answer = document.querySelectorAll(".incorrect");
+               for (let i = 0; i < incorrect_answer.length; i++) {
+                   incorrect_answer[i].addEventListener("click", function() {
+                       incorrect_answer[i].style.backgroundColor = "red";
+
+                   });
+
+               }
+               let input = document.querySelector('input');
+               input.addEventListener('keyup', function(event) {
+                    let name = document.querySelector('#name');
+                    if (input.value) {
+                        name.innerHTML = `kudos, ${input.value}! &#129346`;
+                    }
+                    else {
+                        name.innerHTML = 'hey, muggle!';
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body id="harry_bg">
+        <h1 class="style_font simple-shadow" style="color: red" id="centered">&#9889 Alohmora</h1>
+        <h5 style="color: SlateBlue" id="centered" class="simple-shadow">It does not do well to dwell on dreams and forget to live, remember that!<sub style="color: white; font-size: small" > ~Albus Dumbledore</sub></h5>
+
+        <div>
+           <marquee behavior="scroll" direction="left" style="color: green" class="simple-shadow">Welcome to alohmora! bump onto the quiz fellow <b>potterhead &#x1F609</b>.</marquee>
+            <hr>
+            <h5 style="color: pink">First of all, What hogwarts house would you like to be in?</h5>
+                <input autocomplete="off" autofocus placeholder="House: gryffindor, hufflepuff, ravenclaw, slytherin" type="text">
+                <p id="name" style="color: red"></p>
+
+
+
+            <h3 style="color: orange">What does harmione's parents do for living?</h3>
+            <button class="incorrect">They're doctors</button>
+            <button class="incorrect">They're teachers</button>
+            <button class="correct">They're dentists</button>
+            <button class="incorrect">They're scientists</button>
+
+            <h3 style="color: orange">What is Luna's patronus?</h3>
+            <button class="incorrect">An otter</button>
+            <button class="incorrect">A lynx</button>
+            <button class="incorrect">A horse</button>
+            <button class="correct">A hare</button>
+
+            <h3 style="color: orange">Where is the headquarters of the Order of the phoenix?</h3>
+            <button class="incorrect">Four private drive</button>
+            <button class="incorrect">The room of requirement</button>
+            <button class="correct">Tweleve grimmauld place</button>
+            <button class="incorrect">Dumbledore's office</button>
+        </div>
+
+        <div id="left_corner">
+            <nav class="w3-bar w3-black">
+                <p style="color: pink">Also have a look &#8608
+                <a href="index.html" class="w3-button w3-bar-item" style="color: green"><strong>Home</strong></a>
+                <a href="anime.html" class="w3-button w3-bar-item" style="color: white"><b>Anime</b></a>
+                <a href="greetings.html" class="w3-button w3-bar-item" style="color: green"><b>Greeting</b></a></p>
+            </nav>
+        <div>
+    </body>

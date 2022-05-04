@@ -1,0 +1,140 @@
+.centered{
+    text-align: center;
+
+}
+
+#centered{
+    text-align: center;}
+
+
+
+.style_font{
+    font-family: cursive;
+
+}
+
+.simple-shadow{
+	text-shadow: 1px 2px 2px white;
+}
+
+#left_corner{
+    text-align: left;
+}
+
+
+
+#section {
+    background-image:url("https://kids.scholastic.com/content/dam/scholastic/kids/Content-Mod-BGs/harry-potter/hp-cursed-child-bg2.jpg");
+    height: auto;
+    width: auto;
+    background-repeat:no-repeat;
+    background-size:cover;}
+
+#webpage_head{
+    background-image:url("http://hddesktopwallpapers.in/wp-content/uploads/2015/07/harry-potter-wallpaper-hogwarts.jpg");
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    background-repeat:no-repeat;
+    background-size:cover;}
+
+#harry_bg{
+    background-image:url("https://wallpapercave.com/wp/wp6929802.jpg");
+    height: auto;
+    width: auto;
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family: sans-serif;
+
+}
+
+#home_bg {
+    background-image:url("https://th.bing.com/th/id/OIP.Oq5ZlwMmvhwpoT0zESh55wHaEo?pid=ImgDet&w=1000&h=625&rs=1");
+    height: auto;
+    width: auto;
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family: sans-serif;}
+
+
+#anime_bg{
+    background-image:url("https://wallpapercave.com/wp/wp6725076.jpg");
+    height: auto;
+    width: auto;
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family: sans-serif;
+
+}
+
+
+#scroll-text {
+background-color: green;
+text-align: center;
+color: white;
+font-family: Arial;
+}
+
+
+
+
+
+
+
+
+
+body {
+    background-color: #fff;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+
+.section:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+
+button, input[type="submit"] {
+    background-color: #d9edff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+
+
+
+input[type="text"] {
+    line-height: 1.8;
+    width: 25%;
+}
+
+input[type="text"]:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.section:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
